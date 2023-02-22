@@ -11,6 +11,8 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css">
 
     <link rel="stylesheet" href="./css/styles.css">
@@ -30,31 +32,31 @@
             <ul class="nav__links" id="navegation">
                 <li>
                     <a href="index.html#header" class="link">
-                        Home
+                        Inicio
                     </a>
                 </li>
 
                 <li>
                     <a href="index.html#about" class="link">
-                        About me
+                        Sobre mi
                     </a>
                 </li>
 
                 <li>
                     <a href="index.html#services" class="link">
-                        Services
+                        Servicios
                     </a>
                 </li>
 
                 <li>
-                    <a href="index.html#projects" class="link">
-                        Projects
+                    <a href="index.html#proyectos" class="link">
+                        Proyectos
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="link">
-                        Contact
+                    <a href="index.html#contacto" class="link">
+                        Contacto
                     </a>
                 </li>
             </ul>
@@ -103,21 +105,25 @@
 
     <section class="section__about" id="about">
 
-        <figure class="about__perfile">
+        <figure class="about__perfile" data-aos="fade-right">
             <img class="perfile__avatar" src="./assets/avatar.png" alt="avatar">
         </figure>
 
-        <article class="about__info" >
+        <article class="about__info" data-aos="fade-left">
             <h2 class="info-personal">
-                <span>About Me</span>
+                <span>WHO AM I</span>
 
-                <span>Web Developer</span>
+                <span>Justin Huertas Vargas</span>
             </h2>
 
             <p class="info-paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius autem obcaecati pariatur, vel asperiores nihil quos assumenda! Suscipit, laboriosam autem! Cupiditate, similique consequuntur quod excepturi quo sunt ipsum veritatis sapiente?
-            </p>  
-            
+                Soy de peru, Tengo 18 años, Estudiante de Ing. de Sistemas. Me considero una persona resolutiva, con buen ánimo y capaz de resolver problemas fácilmente.
+            </p>      
+
+            <p class="info-paragraph">
+                Apasionado por la tecnologia con muchas ganas de enseñar y aprender, me agrada trabajar en equipo, cooperando con todos y ayudando de la mejor manera posible.
+            </p>
+
             <div class="info__btn">
                 <button class="btn-cv" id="download">Donwload CV</button>
 
@@ -127,13 +133,90 @@
 
     </section>
 
+    <section class="skills">
+        <h2 class="skills__title">SKILLS</h2>
+
+        <div class="skills__cards">
+            <div class="skills__card" data-aos="fade-right">
+                <img class="skills__image" src="./assets/html-5-svgrepo-com.svg" alt="html">
+                <h4 class="skills__description">HTML 5</h4>
+            </div>
+
+            <div class="skills__card" data-aos="fade-right">
+                <img class="skills__image" src="./assets/css-3-svgrepo-com.svg" alt="css">
+                <h4 class="skills__description">CSS</h4>
+            </div>
+
+            <div class="skills__card" data-aos="fade-left">
+                <img class="skills__image" src="./assets/sass-svgrepo-com.svg" alt="sass">
+                <h4 class="skills__description">SASS</h4>
+            </div>
+
+            <div class="skills__card" data-aos="fade-left">
+                <img class="skills__image" src="./assets/javascript-svgrepo-com.svg" alt="javaScript">
+                <h4 class="skills__description">JAVASCRIPT</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobies">
+        <h2 class="hobies__title">HOBIES</h2>
+
+        <div class="hobies__cards">
+
+            <div class="hobies__card"  data-aos="fade-right">
+                <img src="./assets/television-svgrepo-com.svg" alt="tv">
+                <h4 class="hobies__description">ver series</h4>
+            </div>
+
+            <div class="hobies__card"  data-aos="fade-right">
+                <img src="./assets/soccer-illustrations-svgrepo-com.svg" alt="futbol">
+                <h4 class="hobies__description">Jugar Futbol</h4>
+            </div>
+
+            <div class="hobies__card" data-aos="fade-left">
+                <img src="./assets/game-svgrepo-com.svg" alt="Videojuegos">
+                <h4 class="hobies__description">Jugar Videojuegos</h4>
+            </div>
+
+            <div class="hobies__card" data-aos="fade-left">
+                <img src="./assets/music-svgrepo-com.svg" alt="musica">
+                <h4 class="hobies__description">Escuchar Musica</h4>
+            </div>
+        </div>
+    </section> 
+
+    <section class="formacion">
+        <h2 class="formacion__title">Formacion</h2>
+
+        <div class="formacion__cards">
+            <div class="formacion__card" data-aos="fade-right">
+                <img src="./assets/utp.png" alt="UTP">
+                <h4 class="formacion__description">
+                    Ingenieria de Sistemas
+                </h4>
+
+                <p class="formacion__curso">En curso - UTP</p>
+            </div>
+
+            <div class="formacion__card" data-aos="fade-left">
+                <img src="./assets/Imagem.png" alt="alura">
+                <h4 class="formacion__description">
+                    Formacion en FrontEnd
+                </h4>
+                <p class="formacion__curso">En curso - Alura</p>
+            </div>
+
+        </div>
+    </section>
+
     <section class="section__services" id="services">
         <h2 class="services__title">
-            Services.
+            Servicios
         </h2>
 
         <div class="services___card">
-            <article class="container__card">
+            <article class="container__card" data-aos="fade-right">
                 <div class="card__image">
                     <img src="./assets/computer.svg" alt="computer">
                 </div>
@@ -147,7 +230,7 @@
                 </p>
             </article>
 
-            <article class="container__card">
+            <article class="container__card" data-aos="fade-right">
                 <div class="card__image">
                     <img src="./assets/responsive.svg" alt="responsive">
                 </div>
@@ -161,7 +244,7 @@
                 </p>
             </article>
 
-            <article class="container__card">
+            <article class="container__card" data-aos="fade-right">
                 <div class="card__image">
                     <img src="./assets/design.svg" alt="desing">
                 </div>
@@ -177,161 +260,167 @@
         </div>
     </section>
 
-    <section class="section__projects" id="projects">
-        <h2 class="projects__title">
-            Projects.
-        </h2>
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__title">Proyectos</h2>
 
-        <div class="projects__cards">
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/accordeon.jpg" alt="accordeon">
-                </div>
+        <div class="proyectos__cards">
+            <div class="proyectos__card" data-aos="fade-left">
+                <img src="./assets/encriptador.jpg" alt="encriptador">
 
-                <div class="letter__title">
+                <h4 class="proyectos__description">Encriptador de texto</h4>
 
-                    <h3 class="title-project">
-                        FAQ accordeon
-                    </h3>
-                    
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Accordion_Card" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/Encriptador_de_texto" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://faq-accordeon.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
+                    <a class="proyectos__link" href="https://encriptador-texto-j.netlify.app" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
-            </article>
+            </div>
 
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/encriptador.jpg" alt="accordeon">
-                </div>
+            <div class="proyectos__card" data-aos="fade-left">
+                <img src="./assets/count.jpg" alt="Contador">
 
-                <div class="letter__title">
+                <h4 class="proyectos__description">Contador de numeros</h4>
 
-                    <h3 class="title-project">
-                        Encriptador de Texto
-                    </h3>
-
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/Encriptador_de_texto" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Contador" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://encriptador-texto-j.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
-                </div>
-            </article>
-
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/slider.jpg" alt="accordeon">
+                    <a class="proyectos__link" href="https://count-number-jus.netlify.app" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
 
-                <div class="letter__title">
+            </div>
 
-                    <h3 class="title-project">
-                        Slider Images
-                    </h3>
-                    
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Reviews_Carousel" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+            <div class="proyectos__card" data-aos="fade-left">
+                <img src="./assets/slider.jpg" alt="slider">
+
+                <h4 class="proyectos__description">Slider de comentarios</h4>
+
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Reviews_Carousel" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://reviews-card-432.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
+                    <a class="proyectos__link" href="https://reviews-card-432.netlify.app" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
-            </article>
+            </div>
 
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/page404.jpg" alt="accordeon">
-                </div>
+            <div class="proyectos__card" data-aos="fade-right">
+                <img src="./assets/generator.jpg" alt="Background-generator">
 
-                <div class="letter__title">
+                <h4 class="proyectos__description">Generador de Colores</h4>
 
-                    <h3 class="title-project">
-                        Page 404
-                    </h3>
-                    
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/page-404" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Background-generator" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://err0r-404.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
+                    <a class="proyectos__link" href="https://background-generatorhex.netlify.app" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
-            </article>
+            </div>
 
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/count.jpg" alt="accordeon">
-                </div>
+            <div class="proyectos__card" data-aos="fade-right">
+                <img src="./assets/app.jpg" alt="App-Tareas">
 
-                <div class="letter__title">
+                <h4 class="proyectos__description">App Lista de Tareas</h4>
 
-                    <h3 class="title-project">
-                        Contador
-                    </h3>
-                    
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Contador" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/App-Tareas" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://count-number-jus.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
+                    <a class="proyectos__link" href="https://app-tareas-jst.netlify.app" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
-            </article>
+            </div>
 
-            <article class="container__letter">
-                <div class="letter__image">
-                    <img src="./assets/generator.jpg" alt="accordeon">
-                </div>
+            <div class="proyectos__card" data-aos="fade-right">
+                <img src="./assets/generator_contra.jpg" alt="GeneradorDeContrasenhas">
 
-                <div class="letter__title">
+                <h4 class="proyectos__description">Generador de Contraseñas</h4>
 
-                    <h3 class="title-project">
-                        Generador de Colores
-                    </h3>
-                    
-                    <div class="title__links">
-                        <a href="https://github.com/justin-A18/Proyectos_Personales/tree/Justin/Background-generator" target="_blank" class="link-letter">
-                            <i class='bx bxl-github bx-lg'></i>
-                        </a>
+                <div class="proyectos__links">
+                    <a class="proyectos__link" href="https://github.com/justin-A18/GeneradorDeContrase-as" target="_blank">
+                        <i class='animate bx bxl-github bx-lg' ></i>
+                    </a>
     
-                        <a href="https://background-generatorhex.netlify.app" target="_blank" class="link-letter">
-                            <i class='bx bx-link bx-lg'></i>
-                        </a>
-                    </div>
-
+                    <a class="proyectos__link" href="https://app.netlify.com/sites/cool-mooncake-6d1433/overview" target="_blank">
+                        <i class='animate bx bx-link bx-lg'></i>
+                    </a>
                 </div>
-            </article>
+            </div>
+
+            <a class="ver-mas" href="https://github.com/justin-A18" target="_blank">Ver más</a>
         </div>
-
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <section class="contacto" id="contacto">
+        
+        <h2 class="contacto__title">Contactame</h2>
 
-    <script src="./js/nav-bar.js"></script>
+        <div class="contacto__content">
+            <div class="contacto__datos">
+    
+                <div class="datos__numero">
+                    <h4 class="numero-text">Numero de contacto:</h4>
+                    <p class="numero-info">+51 995533757</p>
+                </div>
+    
+                <div class="datos__correo">
+                    <h4 class="correo-text">Correo de contacto: </h4>
+                    <p class="correo-info">justin.hv08@gmail.com</p>
+                </div>
+    
+            </div>
+    
+            <form action="#" class="contacto__formulario">
+                <div class="form__datos-principales">
+                    <div class="datosp__name">
+                        <input id="name" class="input__name" type="text" placeholder="Nombre" name="nombre">
+                        <label name="nombre" id="error-name" for=""></label>
+                    </div>
+    
+                    <div class="datosp__email">
+                        <input class="input__email" id="email" type="email" placeholder="Email">
+                        <label id="error-email" name="email" for=""></label>
+                    </div>
+                </div>
+    
+                <div class="content__asunto">
+                    <input class="input__asunto" type="text" placeholder="Asunto">
+                    <label for=""></label>
+                </div>
+    
+                <div class="content__mensaje">
+                    <textarea class="input__mensaje" name="" id="" placeholder="Mensaje"></textarea>
+                    <label for=""></label>
+                </div>
+    
+                <div class="content__btn">
+                    <button class="btn" type="submit">enviar mensaje</button>
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <footer class="footer">
+        <h4 class="footer__title">Desarrollado por Justin</h4>
+        <p class="footer__text1">2023</p>
+        <p class="footer__text2">Todos los derechos reservados ©</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
