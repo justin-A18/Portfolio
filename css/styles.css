@@ -369,7 +369,9 @@ body{
 }
 
 .btn-contact{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 14rem;
     height: 4rem;
     font-size: 1.5rem;

@@ -23,7 +23,7 @@ $name.addEventListener("input", function (){
     if(regex.test(this.value)){
         $mensajeroName.innerHTML = "";
     }else{
-        $mensajeroName.innerHTML = "No se permiten caracteres especiales y numeros";
+        $mensajeroName.innerHTML = "nombre invalido";
     }
 })
 
@@ -41,4 +41,10 @@ $email.addEventListener("input", function () {
         $mensajeroEmail.innerHTML = "Email invalido"
     }
 });
+
+//DESCARGA CV
+
+document.getElementById("download").addEventListener("click", () =>{
+    window.open("file:///C:/Users/Efe%20comas%202.PLASTICOSNACION.000/Desktop/CurriculoJs-2.pdf")
+})
 
